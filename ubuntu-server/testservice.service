@@ -1,0 +1,9 @@
+[Unit]
+Description=backup
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/neetha/./sample.sh
+
+[Install]
+WantedBy=multi-user.target

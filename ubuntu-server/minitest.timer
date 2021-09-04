@@ -1,0 +1,10 @@
+# minetest.timer
+[Unit]
+Description=Runs the minetest.service 1 minute after boot up
+
+[Timer]
+OnBootSec=1 m
+Unit=testservice.service
+
+[Install]
+WantedBy=basic.target

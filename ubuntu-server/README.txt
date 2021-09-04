@@ -22,4 +22,19 @@
   $sudo systemctl daemon-reload
   $sudo systemctl restart testservice.service
 
+3. You can also use a timer to similar affect and control when to start the service. Refer to minitest.timer
+
+   $sudo systemctl disable testservice.service
+   $sudo systemctl enable minitest.timer
+
+
+Other details: reference link
+
+https://www.linux.com/training-tutorials/writing-systemd-services-fun-and-profit/
+
+
+https://www.linux.com/training-tutorials/systemd-services-beyond-starting-and-stopping/
+
+
+https://www.linux.com/topic/desktop/setting-timer-systemd-linux/
 

@@ -1,4 +1,5 @@
 import cv2
+from datetime import datetime
 
 #print("Before URL")
 cap = cv2.VideoCapture('http://192.168.0.101:8080/')
@@ -10,7 +11,11 @@ frame_width = int(cap.get(3))
 frame_height = int(cap.get(4))
 size = (frame_width, frame_height)
 
-result = cv2.VideoWriter('filename.avi', 
+now = datetime.now()
+current_time = now.strftime("%H-%M-%S") +".avi"
+
+
+result = cv2.VideoWriter(current_time, 
                          cv2.VideoWriter_fourcc(*'MJPG'),
                          10, size)
 

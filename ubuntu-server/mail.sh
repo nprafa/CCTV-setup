@@ -1,9 +1,10 @@
 SUBJECT="TEST TEST TEST"
 CONTENTS="This is an email!"
-
+RECEPIENTS="neethaprafa760@gmail.com,jathinsarang@gmail.com"
+FROM="neethaprafa760@gmail.com"
 /usr/sbin/ssmtp -t << EOF
-To: neethaprafa760@gmail.com
-From: neethaprafa760@gmail.com
+To: $RECEPIENTS
+From: $FROM
 Subject: $SUBJECT
 
 $CONTENTS
@@ -11,3 +12,4 @@ $CONTENTS
 Cheers,
 Me
 EOF
+

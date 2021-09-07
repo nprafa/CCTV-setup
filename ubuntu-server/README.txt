@@ -55,3 +55,4 @@ https://www.linux.com/topic/desktop/setting-timer-systemd-linux/
   $chmod 755 +x mails.sh to make this file executable
 
 
+5. pinging multiple devices to check if network is up or down. monitor.sh is the shell script to ping for multiple ip's. Add the device ip's in deviceip.txt file
